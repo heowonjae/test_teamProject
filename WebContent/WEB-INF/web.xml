@@ -20,7 +20,7 @@
 		<servlet-name>MemberFrontController</servlet-name>
 		<url-pattern>*.mc</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>BoardFrontController</servlet-name>
 		<servlet-class>net.FBoard.action.BoardFrontController</servlet-class>
@@ -29,7 +29,7 @@
 		<servlet-name>BoardFrontController</servlet-name>
 		<url-pattern>*.fbo</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>CommentFrontController</servlet-name>
 		<servlet-class>net.FComment.action.CommentFrontController</servlet-class>
@@ -38,7 +38,7 @@
 		<servlet-name>CommentFrontController</servlet-name>
 		<url-pattern>*.fco</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>ToDoFrontController</servlet-name>
 		<servlet-class>net.ToDo.action.ToDoFrontController</servlet-class>
@@ -47,5 +47,18 @@
 		<servlet-name>ToDoFrontController</servlet-name>
 		<url-pattern>*.td</url-pattern>
 	</servlet-mapping>
-	
+
+	<servlet>
+		<servlet-name>ProtoFrontController</servlet-name>
+		<servlet-class>com.prototype.action.ProtoFrontController</servlet-class>
+		<init-param>
+			<param-name>configProp</param-name>
+			<param-value>/WEB-INF/config/proto.properties</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProtoFrontController</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+
 </web-app>
