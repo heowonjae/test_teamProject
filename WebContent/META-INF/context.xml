@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <Resource 
+	    name="jdbc/jspdb" 
+	    auth="Container" 
+	    type="javax.sql.DataSource"
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://192.168.2.250:3306/test_teamproject?autoReconnect=true&amp;?useUnicode=true&amp;characterEncoding=utf-8"
+		username="root"
+		password="1234"
+	/>
+    
+    <Resource 
+	    name="jdbc/testdb"
+		auth="Container"
+		type="javax.sql.DataSource"
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://192.168.2.250:3306/test_teamproject?autoReconnect=true&amp;?useUnicode=true&amp;characterEncoding=utf-8"
+		username="root"
+		password="1234"
+	/>
+    
+	<Resource 
+		name="jdbc/jspdb" 
+		auth="Container" 
+		type="javax.sql.DataSource"
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://192.168.2.250:3306/test_teamproject?autoReconnect=true&amp;?useUnicode=true&amp;characterEncoding=utf-8"
+		username="jspid"
+		password="jsppass"
+	/>
+</Context>
