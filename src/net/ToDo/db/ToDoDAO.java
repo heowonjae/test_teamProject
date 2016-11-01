@@ -437,7 +437,7 @@ public class ToDoDAO {
 		return ToDoList;
 	}
 
-	public void ToDoFinish(int num, int complete) {
+	public void ToDoFinish(int num) {        //(num,1)
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -445,10 +445,10 @@ public class ToDoDAO {
 		try {
 			// 1,2 디비연결
 			con = getConnection();
-			// 3 goods 조건 num에 해당되는 상품 삭제
+			// 3 
 			sql = "select complete from do_list where num=?";
 			pstmt = con.prepareStatement(sql);
-			pstmt.setInt(1, num);
+			pstmt.setInt(1,num);
 			// 4 rs 실행저장
 			rs = pstmt.executeQuery();
 			// 5 rs첫행이동 데이터 있으면
@@ -456,8 +456,9 @@ public class ToDoDAO {
 			if (rs.next()) {
 				sql = "update do_list set complete=? where num=?";
 				pstmt = con.prepareStatement(sql);
-				pstmt.setInt(1, complete);
+				pstmt.setInt(1, 1);
 				pstmt.setInt(2, num);
+				
 				// 4 실행
 				pstmt.executeUpdate();
 			}

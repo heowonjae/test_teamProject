@@ -15,13 +15,15 @@ public class ToDoFinishAction implements Action{
 		System.out.println("ToDoFinishAction excute()");
 		
 		String pageNum=request.getParameter("pageNum");
-		int num=Integer.parseInt(request.getParameter("num"));
-		int complete=Integer.parseInt(request.getParameter("complete"));
-		System.out.println(complete);
+		//int num=Integer.parseInt(request.getParameter("num"));
+		//System.out.println("num"+num);
+		int num = Integer.parseInt(request.getParameter("complete"));
+		
+		//System.out.println("complete" + (complete + 1));
 		
 		
 				ToDoDAO tdao=new ToDoDAO();
-				tdao.ToDoFinish(num,complete);
+				tdao.ToDoFinish(num);
 				
 				
 				response.setContentType("text/html; charset=UTF-8");
