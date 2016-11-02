@@ -36,7 +36,7 @@ public class ProjectAddAction implements Action {
 		project.setP_start(p_start);
 		project.setP_end(p_end);
 		dao.projectAdd(project);
-		response.sendRedirect("./ProjectsList.do");
+		response.sendRedirect("./ProjectsList.pr");
 		
 		return null;
 	}

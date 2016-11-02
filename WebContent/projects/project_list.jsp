@@ -1,4 +1,4 @@
-<%@page import="com.prototype.bean.ProjectBean"%>
+<%@page import="com.project.bean.ProjectBean"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -56,7 +56,7 @@
 			<input type="button" value="취소">
 		</div>
 		<div id="dialog" title="프로젝트생성">
-			<form action="./ProjectAddAction.do" method="post" id="frm">
+			<form action="./ProjectAddAction.pr" method="post" id="frm">
 			<table>
 				<tr>
 					<td>프로젝트명</td>

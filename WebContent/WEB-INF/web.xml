@@ -50,7 +50,7 @@
 
 	<servlet>
 		<servlet-name>ProtoFrontController</servlet-name>
-		<servlet-class>com.prototype.action.ProtoFrontController</servlet-class>
+		<servlet-class>com.project.action.ProtoFrontController</servlet-class>
 		<init-param>
 			<param-name>configProp</param-name>
 			<param-value>/WEB-INF/config/proto.properties</param-value>

@@ -40,7 +40,7 @@ public class JoinAction implements Action {
 		if (dao.memberAdd(member)) {
 			out.write("<script>");
 			out.write("alert('가입성공');");
-			out.write("location.href = './Login.do';");
+			out.write("location.href = './Login.pr';");
 			out.write("</script>");
 			out.close();
 		} else {

@@ -8,6 +8,6 @@
 </head>
 <body>
 404 error page
-<a href="./Login.do">login</a>
+<a href="./Login.pr">login</a>
 </body>
 </html>

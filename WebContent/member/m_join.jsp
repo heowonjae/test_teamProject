@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="./JoinAction.do" method="post">
+	<form action="./JoinAction.pr" method="post">
 		<table>
 			<tr>
 				<td><label>아이디</label></td>
