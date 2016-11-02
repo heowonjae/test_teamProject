@@ -12,7 +12,7 @@
 
 // response.sendRedirect("./MemberJoin.mc");
 // response.sendRedirect("./ToDoList.td");
-response.sendRedirect("./");
+// response.sendRedirect("./");
 // response.sendRedirect("./FBoardWrite.fbo");
 //response.sendRedirect("./MemberLogin.mc");
 
